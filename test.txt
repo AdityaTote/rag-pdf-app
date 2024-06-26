@@ -1,2 +1,0 @@
-The error message indicates that an embedding function is required to compute embeddings, but it seems not to be properly provided or recognized by the Chroma vector store during the document addition process.
-Ensure that the `get_embedding_function()` function returns a valid embedding function that Chroma can use to compute embeddings for the documents.

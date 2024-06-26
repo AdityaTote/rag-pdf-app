@@ -54,6 +54,8 @@ def query_rag(query_text: str):
     sources = [doc.metadata.get("id", None) for doc, _score in results]
     formatted_response = f"Response: {response_text}\nSources: {sources}"
     print(formatted_response)
+    content = response_text.content
+    print(content)
     return response_text
 
 
